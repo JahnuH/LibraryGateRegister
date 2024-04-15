@@ -1,0 +1,127 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background: radial-gradient(circle, hsla(225, 78%, 59%, 1) 0%, hsla(197, 85%, 51%, 1) 100%);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+#logo {
+    width: 1000px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+header h1 {
+    margin: 10px 0 0;
+    font-size: 24px;
+}
+
+.logout-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.left-panel,
+.middle-panel,
+.right-panel,
+.upper-left-panel,
+.lower-left-panel {
+    flex-basis: calc(33.33% - 40px);
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.left-panel,
+.middle-panel,
+.right-panel,
+.upper-left-panel,
+.lower-left-panel {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.middle-panel,
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.real-time-stats {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.stat-label {
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.user-details {
+    text-align: center;
+    font-size: 25px;
+}
+
+.user-details img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%;
+}
+
+.user-details-prompt {
+    text-align: center;
+    font-size: 40px;
+}
+
+#idInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: radial-gradient(circle, hsla(225, 78%, 59%, 1) 0%, hsla(197, 85%, 51%, 1) 100%);
+    color: #fff;
+}
+
+.live-time-section {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
