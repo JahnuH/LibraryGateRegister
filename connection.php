@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$dbname = "koha";
 $username = "root";
-$password = "";
+$dbname = "koha"; //$dbname = "koha_library"; <-@university
+$password = ""; //$password = "mysqlroot"; <-@university
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 

@@ -14,7 +14,22 @@ $stmt->close();
 
 if ($inputPassword === $storedPassword) {
     $_SESSION['user'] = $user;
-    header("Location: main.php");
+
+    switch ($user) {
+        case 'Master':
+            header("Location: master.php");
+            break;
+        case 'Admin':
+            header("Location: user.php");
+            break;
+        case 'User':
+            header("Location: user.php");
+            break;
+        default:
+            header("Location: login.php");
+            break;
+    }
+
     exit();
 } else {
     header("Location: login.php?error=incorrect_password");
